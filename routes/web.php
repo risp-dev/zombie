@@ -9,8 +9,8 @@ use App\Http\Controllers\ZombieController;
 #Let's make all the zombies present so define a route linked to controller method
 Route::get('zombies', [ZombieController::class, 'show']);
 
+#Route::get('/zombie', [ZombieController::class, 'index']);
 
-Route::get('/zombie', [ZombieController::class, 'index']);
 
 Route::get('zombies', function(){
 
