@@ -15,6 +15,10 @@ class isNotZombie
      */
     public function handle(Request $request, Closure $next): Response
     {
+            $is_zombie = rand(0, 1);
+            if($is_zombie) {
+                return redirect('/home');
+            }
         return $next($request);
     }
 }
